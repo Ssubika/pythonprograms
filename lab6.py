@@ -1,7 +1,8 @@
-Grocery = {"Cornflakes":{"quantity":15,"price":100},"Muesli":{"quantity":14,"price":150},"Oats":{"quantity":10,"price":80}
-,"Wheat Flakes": {"quantity": 5,"price" : 75}
-,"Granola": {"quantity":8,"price":125}}
-print("before addition:",Grocery)
-Grocery["sweet"]={"quantity":32,"price":400}
-print("after addition:",Grocery)
-
+c={}
+n=int(input ("enter the number of elements:")) 
+for i in range(n) :
+    key=input("Enter the key") 
+    value=input("Enter the value") 
+    c[key]=value
+for key, value in c.items():
+  print(key,value)
